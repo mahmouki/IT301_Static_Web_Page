@@ -1,0 +1,9 @@
+
+.gallery .photos { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.5rem; }
+.gallery .photos li { width: calc(33% - 1rem); }
+.gallery figure { margin: 0; background: #14212b; }
+.gallery img { display: block; width: 100%; height: auto; } 
+.gallery figcaption { color: white; padding: 0.7rem 1rem; } 
+
+@media (max-width: 56rem) { .gallery .photos li { width: calc(50% - 1rem); } }
+@media (max-width: 36rem) { .gallery .photos li { width: 100%; } }

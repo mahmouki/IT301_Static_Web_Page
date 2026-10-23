@@ -1,0 +1,11 @@
+.hits ol { padding-left: 2rem; } 
+.hits ol li { background: white; padding: 1rem; margin-bottom: 1.5rem; } 
+.hits .hit { display: flex; align-items: flex-start; gap: 1.5rem; } 
+.hits .hit img { width: 40%; }
+.hits .hit div { flex: 1; }
+.hits .hit h2 { margin-top: 0; }
+
+@media (max-width: 40rem) {
+  .hits .hit { flex-direction: column; }
+  .hits .hit img { width: 100%; }
+}

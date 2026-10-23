@@ -1,0 +1,17 @@
+
+.about .about-layout { display: flex; gap: 2rem; }
+.about .about-photo { position: relative; margin: 0; width: 35%; } /* relative for caption */
+.about .about-photo figcaption { position: absolute; bottom: 0; right: 0; background: var(--gold); padding: 0.5rem 0.8rem; font-weight: bold; } /* absolute caption */
+.about .about-text { width: 65%; }
+
+
+@media (max-width: 48rem) {
+  .about .about-layout { flex-direction: column; }
+  .about .about-photo, .about .about-text { width: 100%; }
+}
+
+.about form { background: white; padding: 2rem; max-width: 34rem; margin-top: 2rem; border-top: 6px solid var(--gold); }
+.about label { display: block; font-weight: bold; margin-bottom: 0.3rem; }
+.about input, .about select, .about textarea { width: 100%; padding: 0.6rem; margin-bottom: 1.2rem; border: 2px solid #7d8c8c; border-radius: 4px; font-size: 1rem; }
+
+@media (max-width: 40rem) { .about form { padding: 1.2rem; } }

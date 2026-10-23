@@ -1,0 +1,8 @@
+/* poetry.css - ONLY for poetry.html (rules start with .poetry) */
+.poetry .poem { position: relative; background: white; padding: 2rem 1.5rem 1.5rem; margin-bottom: 1.5rem; border-left: 6px solid var(--gold); } /* relative = box for the place tag */
+.poetry .poem h2 { margin-top: 0; }
+.poetry .poem p { font-family: Georgia, serif; font-size: 1.1rem; line-height: 1.8; }
+.poetry .place { position: absolute; top: 0; right: 0; background: var(--dark); color: white; padding: 0.3rem 0.8rem; font-size: 0.9rem; } /* absolute = tag in the corner */
+
+/* MEDIA QUERY - small screens: smaller poem text */
+@media (max-width: 40rem) { .poetry .poem p { font-size: 1rem; } }

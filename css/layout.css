@@ -1,0 +1,17 @@
+/* layout.css - header, nav, footer (same on every page) */
+.site-header { background: var(--dark); color: white; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: Georgia, serif; font-size: 1.5rem; margin: 0; }
+
+/* nav links in a row */
+.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 0.5rem; }
+.site-nav a { color: white; text-decoration: none; padding: 0.5rem 1rem; display: block; }
+.site-nav a:hover, .site-nav a.current { border-bottom: 3px solid var(--gold); }
+
+.site-footer { background: var(--text); color: white; padding: 1.5rem; text-align: center; }
+.site-footer a { color: var(--gold); }
+
+/* MEDIA QUERY - small screens: header + nav stack up */
+@media (max-width: 40rem) {
+  .site-header { flex-direction: column; align-items: flex-start; }
+  .site-nav ul { flex-direction: column; }
+}
