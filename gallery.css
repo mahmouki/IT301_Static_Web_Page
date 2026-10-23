@@ -1,8 +1,0 @@
-/* gallery.css - gallery page only */
-.photo-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space); }
-.photo-grid figure { position: relative; margin: 0; overflow: hidden; background: var(--ink); }
-.photo-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-.photo-grid figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 0.75rem 1rem; background: rgba(20, 33, 43, 0.85); color: var(--white); }
-/* MEDIA QUERY: medium screens 2 columns, small screens 1 column */
-@media (max-width: 56rem) { .photo-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 36rem) { .photo-grid { grid-template-columns: 1fr; } }
