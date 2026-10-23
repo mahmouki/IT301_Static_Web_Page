@@ -1,0 +1,7 @@
+/* about.css - about page only */
+.about-layout { display: grid; grid-template-columns: 1fr 2fr; gap: calc(var(--space) * 2); align-items: start; }
+.about-photo { position: relative; margin: 0; }
+.about-photo figcaption { position: absolute; right: 0; bottom: 0; background: var(--lamp); color: var(--ink); padding: 0.5rem 0.75rem; font-weight: 700; }
+.gear li { margin-bottom: 0.4rem; }
+/* MEDIA QUERY: small screens - photo sits above text */
+@media (max-width: 48rem) { .about-layout { grid-template-columns: 1fr; } }

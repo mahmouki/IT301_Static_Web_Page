@@ -1,0 +1,6 @@
+/* contact.css - contact page only */
+.contact-form { background: var(--white); padding: calc(var(--space) * 1.5); max-width: 36rem; border-top: 6px solid var(--lamp); }
+.contact-form label { display: block; margin-bottom: 0.35rem; font-weight: 700; }
+.contact-form input, .contact-form select, .contact-form textarea { width: 100%; padding: 0.65rem; margin-bottom: var(--space); border: 2px solid #7d8c8c; border-radius: 4px; font: inherit; }
+/* MEDIA QUERY: small screens - less padding inside form */
+@media (max-width: 40rem) { .contact-form { padding: var(--space); } }

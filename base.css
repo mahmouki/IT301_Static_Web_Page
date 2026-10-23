@@ -1,0 +1,22 @@
+/* base.css - shared colors, fonts, reset, layout helpers (used by ALL pages) */
+:root {
+  --ink: #1d2b33;
+  --paper: #eef2f1;
+  --dusk: #1f3a4d;
+  --lamp: #e9b44c;
+  --lamp-dark: #8a5a00;
+  --white: #ffffff;
+  --space: 1.5rem;
+  --font-head: "Young Serif", Georgia, serif;
+  --font-body: "Libre Franklin", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); line-height: 1.65; color: var(--ink); background: var(--paper); }
+h1, h2, h3 { font-family: var(--font-head); font-weight: 400; line-height: 1.2; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--lamp-dark); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid var(--lamp); outline-offset: 2px; }
+main { max-width: 64rem; margin: 0 auto; padding: calc(var(--space) * 2) var(--space); }
+main p { max-width: 65ch; }
+.btn { display: inline-block; padding: 0.75rem 1.5rem; background: var(--lamp); color: var(--ink); font-weight: 700; text-decoration: none; border: 0; border-radius: 4px; cursor: pointer; font-family: inherit; font-size: 1rem; }
+.btn:hover { background: var(--white); }

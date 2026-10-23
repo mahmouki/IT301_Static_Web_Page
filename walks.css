@@ -1,0 +1,9 @@
+/* walks.css - walking routes page only */
+.table-wrap { overflow-x: auto; }
+.route-table { width: 100%; border-collapse: collapse; background: var(--white); }
+.route-table caption { text-align: left; font-family: var(--font-head); font-size: 1.25rem; padding-bottom: 0.75rem; }
+.route-table th, .route-table td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid #c5d0d0; }
+.route-table thead th { background: var(--dusk); color: var(--paper); }
+.tips { background: var(--white); border-left: 6px solid var(--lamp); padding: var(--space); margin-top: calc(var(--space) * 2); }
+/* MEDIA QUERY: small screens - tighter table text */
+@media (max-width: 40rem) { .route-table th, .route-table td { padding: 0.5rem; font-size: 0.9rem; } }
